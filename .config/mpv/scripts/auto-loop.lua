@@ -1,5 +1,5 @@
 local filetypes = {
-    'gif', 'webm'
+    'gif', 'webm', 'mp4'
 }
 
 function find_string_in(tbl, str)

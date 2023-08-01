@@ -16,6 +16,9 @@ function get_extension(filename)
 end
 
 function auto_loop()
+    if mp.get_property("shuffle") == "yes" then
+        return
+    end
     local ext = get_extension(mp.get_property("filename"))
     if find_string_in(filetypes, ext) then
         mp.set_property("loop", "inf")

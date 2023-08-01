@@ -14,4 +14,4 @@
 - Keep in mind that base directory is `$HOME`
 
 ## Client Setup
-I'll update this once I actually use this on another machine
+Simply clone this repo as you normally would and manually move the files to where they should be.

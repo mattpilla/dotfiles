@@ -16,7 +16,8 @@ function get_extension(filename)
 end
 
 function auto_loop()
-    if mp.get_property("shuffle") == "yes" then
+    -- don't loop if in a playlist
+    if mp.get_property_number("playlist-count") > 1 then
         return
     end
     local ext = get_extension(mp.get_property("filename"))
